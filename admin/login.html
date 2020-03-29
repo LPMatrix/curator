@@ -64,10 +64,13 @@
               // [START_EXCLUDE]
               if (errorCode === 'auth/wrong-password') {
                 alert('Wrong password.');
+                break
               } else {
                 alert(errorMessage);
+                break
               }
               console.log(error);
+              // document.location.href = 'index.html';
               document.getElementById('loginBtn').disabled = false;
               // [END_EXCLUDE]
             });
